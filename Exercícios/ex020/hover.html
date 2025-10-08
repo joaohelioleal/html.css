@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p{
+            display: none;
+        } /*Display none serve pra esconder, nesse caso esconder o elemento filho de div p*/
+
+        div:hover > p {
+            display: block;
+            background-color: red;
+        } /*Aqui é o que ocorre quando o mouse passa por cima do elemento filho de div p*/
+        
+        /*quando alguém passar o mouse em cima da div vai mostra o que está escrito no parágrafo p dentro dele com as características que definimos, também pode ser colocado características na div em si quando for clicada, ambas aparecerão*/
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+       <p>TEXTO ESCONDIDO...</p>
+    </div>
+
+    <p>fim do exemplo</p>
+</body>
+</html>

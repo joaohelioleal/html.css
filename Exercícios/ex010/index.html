@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+   <!--
+    Href -> Para link.
+    Target _Blank -> é para abrir uma nova aba, em caso de ser um link externo.
+    Rel external -> indica que a relação é de ser externo.
+   -->
+   <h1>Usando links externos</h1> 
+   <p>você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+   <p>voc~e também pode acessar o meu <a href="https://youtube.com/cursoemvideo/"  target="_blank" rel="external">canal gratuito no youtube</a></p>
+
+   <!--
+    Href -> Para link.
+    Target _Self -> é para abrir na mesma aba, pot cima da que já estava.
+    Rel next -> indica que a relação é de ir pra próxima página.
+   -->
+
+   <h1>Usando Links Internos</h1>
+   <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">Segunda página</a></p>
+   <p>você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+   <h1>links para Download</h1> <!--Como instalar um PDF, não está instalando diretamente, em ZIP no exemplo se instala diretamente-->
+
+   <!--Você deve colocar o link, depois download com o nome e o tipo(cada tipo de arquivo, como pdf ou zip, possui uma nomeclatura de tipo diferente.)-->
+   <ul>
+    <li><a href="livro/Trabalho PC.pdf" download="Trabalho_2.pdf" type="application/pdf">Baixar o Livro em PDF</a></li>
+    <li><a href="#">Livro compactado em ZIP</a></li>
+   </ul>
+</body>
+</html>
